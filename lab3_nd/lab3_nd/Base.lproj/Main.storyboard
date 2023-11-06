@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3_nd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ePK-RM-fdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkW-LC-LMt">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="36l-J7-cY3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="knG-oX-htN" userLabel="Stack View row 1">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-Xb-HhJ" userLabel="View 1" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qB-Lo-LCn" userLabel="View 2" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnR-ot-OBb" userLabel="View 3" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="255" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="43Z-Xb-HhJ" firstAttribute="width" secondItem="knG-oX-htN" secondAttribute="width" multiplier="0.32" id="OP8-Dx-dvB"/>
+                                                    <constraint firstItem="RnR-ot-OBb" firstAttribute="width" secondItem="9qB-Lo-LCn" secondAttribute="width" id="OVP-SA-TZA"/>
+                                                    <constraint firstItem="9qB-Lo-LCn" firstAttribute="width" secondItem="43Z-Xb-HhJ" secondAttribute="width" id="RoM-eI-Piw"/>
+                                                    <constraint firstAttribute="height" constant="110" id="d6w-nE-T30"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tWy-TG-SKv" userLabel="Stack View row 1">
+                                                <rect key="frame" x="0.0" y="136" width="375" height="110"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-do-UC0" userLabel="View 1" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMm-ib-93b" userLabel="View 2" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owD-7k-NzQ" userLabel="View 3" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="255" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="OP6-do-UC0" firstAttribute="width" secondItem="tWy-TG-SKv" secondAttribute="width" multiplier="0.32" id="6Ql-z6-Ewg"/>
+                                                    <constraint firstItem="owD-7k-NzQ" firstAttribute="width" secondItem="nMm-ib-93b" secondAttribute="width" id="7TJ-Lf-UEU"/>
+                                                    <constraint firstItem="nMm-ib-93b" firstAttribute="width" secondItem="OP6-do-UC0" secondAttribute="width" id="Fap-M3-5tJ"/>
+                                                    <constraint firstAttribute="height" constant="110" id="xaf-od-JKf"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lCu-AT-CO1" userLabel="Stack View row 1">
+                                                <rect key="frame" x="0.0" y="272" width="375" height="110"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gl7-zQ-X6c" userLabel="View 1" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEe-9n-uT1" userLabel="View 2" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-zz-zt7" userLabel="View 3" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="255" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Gl7-zQ-X6c" firstAttribute="width" secondItem="lCu-AT-CO1" secondAttribute="width" multiplier="0.32" id="TDL-A2-d9l"/>
+                                                    <constraint firstAttribute="height" constant="110" id="bX6-V9-UKW"/>
+                                                    <constraint firstItem="gEe-9n-uT1" firstAttribute="width" secondItem="Gl7-zQ-X6c" secondAttribute="width" id="k0M-Aq-4Z3"/>
+                                                    <constraint firstItem="Ajr-zz-zt7" firstAttribute="width" secondItem="gEe-9n-uT1" secondAttribute="width" id="o60-vu-5yx"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-HV-wXu" userLabel="Stack View row 1">
+                                                <rect key="frame" x="0.0" y="408" width="375" height="110"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-Ib-nrn" userLabel="View 1" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1P-MF-8dt" userLabel="View 2" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhu-au-UTG" userLabel="View 3" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="255" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="92J-ac-fqv"/>
+                                                    <constraint firstItem="m1P-MF-8dt" firstAttribute="width" secondItem="ggc-Ib-nrn" secondAttribute="width" id="AVN-YJ-vBL"/>
+                                                    <constraint firstItem="ggc-Ib-nrn" firstAttribute="width" secondItem="ldQ-HV-wXu" secondAttribute="width" multiplier="0.32" id="Ceg-mQ-CnH"/>
+                                                    <constraint firstItem="Yhu-au-UTG" firstAttribute="width" secondItem="m1P-MF-8dt" secondAttribute="width" id="hLM-90-t6r"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Yik-7f-oSp" userLabel="Stack View row 1">
+                                                <rect key="frame" x="0.0" y="544" width="375" height="110"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6W-B5-cLZ" userLabel="View 1" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-mo-81w" userLabel="View 2" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="127.66666666666669" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-Wc-fSu" userLabel="View 3" customClass="Card" customModule="lab3_nd" customModuleProvider="target">
+                                                        <rect key="frame" x="255" y="0.0" width="120" height="110"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="q9S-Wc-fSu" firstAttribute="width" secondItem="FJl-mo-81w" secondAttribute="width" id="38f-Ez-UKQ"/>
+                                                    <constraint firstItem="U6W-B5-cLZ" firstAttribute="width" secondItem="Yik-7f-oSp" secondAttribute="width" multiplier="0.32" id="JGu-Uj-esc"/>
+                                                    <constraint firstItem="FJl-mo-81w" firstAttribute="width" secondItem="U6W-B5-cLZ" secondAttribute="width" id="RPL-KA-KDA"/>
+                                                    <constraint firstAttribute="height" constant="110" id="lbj-aH-zhc"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="36l-J7-cY3" firstAttribute="width" secondItem="AkW-LC-LMt" secondAttribute="width" id="0O5-D7-ptS"/>
+                                    <constraint firstAttribute="trailing" secondItem="36l-J7-cY3" secondAttribute="trailing" id="GLa-s3-Q7E"/>
+                                    <constraint firstItem="36l-J7-cY3" firstAttribute="centerY" secondItem="AkW-LC-LMt" secondAttribute="centerY" priority="250" id="cRN-0d-JtN"/>
+                                    <constraint firstItem="36l-J7-cY3" firstAttribute="centerX" secondItem="AkW-LC-LMt" secondAttribute="centerX" id="pmB-DN-XSa"/>
+                                    <constraint firstItem="36l-J7-cY3" firstAttribute="leading" secondItem="AkW-LC-LMt" secondAttribute="leading" id="qUQ-lW-UtQ"/>
+                                    <constraint firstItem="36l-J7-cY3" firstAttribute="top" secondItem="AkW-LC-LMt" secondAttribute="top" id="rXp-s4-v9Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="36l-J7-cY3" secondAttribute="bottom" id="ukt-5L-9Xh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZdX-J5-Es2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AkW-LC-LMt" firstAttribute="top" secondItem="ZdX-J5-Es2" secondAttribute="top" id="Gs9-Kz-3J4"/>
+                            <constraint firstItem="ZdX-J5-Es2" firstAttribute="bottom" secondItem="AkW-LC-LMt" secondAttribute="bottom" id="KwE-so-MUP"/>
+                            <constraint firstItem="AkW-LC-LMt" firstAttribute="leading" secondItem="ZdX-J5-Es2" secondAttribute="leading" id="Vtm-yc-FbZ"/>
+                            <constraint firstAttribute="trailing" secondItem="AkW-LC-LMt" secondAttribute="trailing" id="gLP-na-sME"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
